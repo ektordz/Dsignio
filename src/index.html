@@ -1,74 +1,385 @@
 <!DOCTYPE html>
-<html lang="es-mx">
+<html lang="en">
+
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inicio - Dsignio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dsignio</title>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
-    
-    <!-- Fonts Awesome -->
-    <link type="text/css" rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css">
+  <link rel='icon' href='./assets/images/logo-dsignio-fav_16x16.png' sizes="16x16" type='image/png'>
+  <link rel='icon' href='./assets/images/logo-dsignio-fav_32x32.png' sizes="32x32" type='image/png'>
+  <link rel='icon' href='./assets/images/logo-dsignio-fav_48x48.png' sizes="48x48" type='image/png'>
+  <link rel="stylesheet" href="./assets/css/style.css">
 
-    <!-- Link Swiper's CSS -->
-    <link type="text/css" rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
-    <!-- Style Page -->
-    <link type="text/css" rel="stylesheet" href="/css/site.css" anonymous="true" />
-
-    <!-- Favicon -->
-    <link rel='icon' href='images/logo-dsignio-fav.svg' type='image/png' sizes="16x16" />
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@700;900&display=swap"
+    rel="stylesheet">
 </head>
-<body>
-    <header class="sticky-top">
-        <nav  class="navbar navbar-expand-sm navbar-toggleable-sm navbar-white bg-white">
-            <div class="container">
-                <a  href="http://dsignio.mx" class="navbar-brand d-flex">
-                    <img src="images/logo-dsignio-sf.svg" alt="Logo" class="img-fluid" style="width:8rem" />                    
-                </a>
-            </div>
-        </nav>
 
-        <nav  class="navbar navbar-expand-sm navbar-light bg-secondary py-0">
-            <div  class="container">
-                <button  class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="menu principal">
-                  <span  class="navbar-toggler-icon"></span>
-                </button>
-                <div  class="navbar-collapse collapse" id="navbarMenu">
-                    <ul  class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li  class="nav-item px-3">
-                            <a class="nav-link text-white" href="http://dsignio.mx">Inicio</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <main  role="main" class="">
-        <section id="hero" class="hero-banner-app d-flex align-items-center">
-            <div class="container">
-                <div class="row justify-content-center justify-content-md-start">
-                    <div class="col-8 col-sm-6 h-75">
-                        <img src="images/logo-dsignio.svg">
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer  class="footer border-top text-muted">
-        <div  class="container-fluid px-0 py-5 bg-primary text-center text-white">
-            &copy; 2022 - dsignio | Taller Creativo Digital
+<body id="top">
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <nav class="navbar bg-primary">
+        <a class="navbar-brand logo" href="#">
+          <img src="assets/images/logo-designio.svg" alt="Logo" width="175" height="40" class="d-inline-block align-text-top">
+        </a>
+      </nav>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list container">
+
+          <li>
+            <a href="#home" class="navbar-link active" data-nav-link>Inicio</a>
+          </li>
+
+          <li>
+            <a href="#features" class="navbar-link" data-nav-link>Servicios</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>Acerca de nosotros</a>
+          </li>
+
+          <li>
+            <a href="#" class="btn btn-primary">Pide tu Asesoria Gratis</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <button class="nav-toggle-btn" aria-label="toggle manu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" aria-label="hero" id="home">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="section-subtitle">B i e n v e n i d o</p>
+
+            <h1 class="h1 hero-title">Hacemos crecer <small>tu</small> negocio <small>con tu</small><br />Sitio Web</h1>
+
+
+            <p class="section-text">
+              Somos un taller creativo que mantiene lo simple, nuestros expertos crearan tu sitio web perfecto. Desde la marca, la estrategia y las campañas ... Nuestros clientes trabajan con nosotros porque creamos ideas atractivas y auténticas que elevaran tu negocio. 
+            </p>
+
+            <ul class="btn-list">
+
+              <li>
+                <a href="" class="btn btn-primary">Asesoría Gratis</a>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <figure class="hero-banner">
+            <img src="./assets/images/hero-banner-ds.png" width="769" height="804" alt="hero banner" class="w-100">
+          </figure>
+
         </div>
-    </footer>
+      </section>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- js Page -->
-    <script src="/js/site.js" anonymous="true"></script>
 
+
+
+
+      <!-- 
+        - #FEATURES 
+      -->
+
+      <section class="section features" id="features" aria-label="features">
+        <div class="container">
+
+          <p class="section-subtitle">Nuestro grupo de expertos potencializará tu marca</p>
+
+          <h2 class="h2 section-title">Creando soluciones impactantes</h2>
+
+          <ul class="features-list">
+
+            <li class="features-item">
+              <div class="features-card">
+
+                <div class="card-icon">
+                  <ion-icon name="code-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">Desarrollo Web</h3>
+
+                <p class="card-text">
+                  
+                </p>
+
+              </div>
+            </li>
+
+            <li class="features-item">
+              <div class="features-card">
+
+                <div class="card-icon">
+                  <ion-icon name="cube-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">Infraestructura Tecnológica</h3>
+
+                <p class="card-text">
+                  
+                </p>
+
+              </div>
+            </li>
+
+            <li class="features-item">
+              <div class="features-card">
+
+                <div class="card-icon">
+                  <ion-icon name="shield-checkmark-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">UX & UI Design</h3>
+
+                <p class="card-text">
+                  
+                </p>
+
+              </div>
+            </li>
+
+            <li class="features-item">
+              <div class="features-card">
+
+                <div class="card-icon">
+                  <ion-icon name="create-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">Diseño Gráfico</h3>
+
+                <p class="card-text">
+                  
+                </p>
+
+              </div>
+            </li>
+
+            <li class="features-item">
+              <div class="features-card">
+
+                <div class="card-icon">
+                  <ion-icon name="rocket-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">Marketing Digital</h3>
+
+                <p class="card-text">
+                  
+                </p>
+
+              </div>
+            </li>
+
+            <li class="features-item">
+              <div class="features-card">
+
+                <div class="card-icon">
+                  <ion-icon name="earth-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">Social Media</h3>
+
+                <p class="card-text">
+                  
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about" aria-label="about">
+        <div class="container">
+
+          <figure class="about-banner">
+            <img src="./assets/images/about-banner-ds.png" width="1262" height="1357" loading="lazy" alt="about banner"
+              class="w-100">
+          </figure>
+
+          <div class="about-content">
+
+            <p class="section-subtitle"></p>
+
+            <h2 class="h2 section-title">Diseño y asistencia continua de marketing.</h2>
+
+            <p class="section-text">
+              Descubre cómo podemos ayudarte a conseguir clientes y mejorar tu visibilidad en Internet
+            </p>
+
+            <ul class="about-list">
+
+              <li class="about-item">
+
+                <div class="item-icon">
+                  <ion-icon name="rocket" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div>
+                  <h3 class="h3 item-title">Diseño de calidad</h3>
+
+                  <p class="item-text">
+                    Deja que nuestros diseñadores profesionales creen un sitio web optimizado para dispositivos móviles que esté optimizado para motores de búsqueda y que se pueda buscar en Google, Yahoo y más.
+                  </p>
+                </div>
+
+              </li>
+
+              <li class="about-item">
+
+                <div class="item-icon">
+                  <ion-icon name="create" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div>
+                  <h3 class="h3 item-title">Obten orientación sobre las tecnologías adecuadas para invertir</h3>
+
+                  <p class="item-text">
+                    Manténte enfocado en tu negocio mientras brindamos asistencia continua en diseño, marketing y contenido para tu sitio web.
+                  </p>
+                </div>
+
+              </li>
+
+            </ul>
+
+            <a href="#" class="btn btn-secondary">Descubre como</a>
+
+          </div>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="section footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a class="logo" href="#">
+            <img src="assets/images/logo-designio.svg" alt="Logo" width="132" height="30" class="d-inline-block align-text-top">
+          </a>
+
+          <p class="section-text">
+            Casi todas las organizaciones deberán convertirse en una empresa de tecnología para poder competir mañana. Sí, incluso el tuyo. En Dsignio, tenemos la misión de ayudar a los negocios a desarrollar competitividad y agilidad utilizando la tecnología.
+          </p>
+
+        </div>
+
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Contacto</p>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+
+            <a href="tel:771 184 9212" class="item-link">771 184 9212</a>
+
+            <a href="tel:771 213 7379" class="item-link">771 213 7379</a>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+            <a href="dsigniotallergrafico@gmail.com" class="item-link">dsigniotallergrafico@gmail.com</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2022 Todos los derechos reservados <a href="#" class="copyright-link">dsignio.</a>.
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
+
 </html>

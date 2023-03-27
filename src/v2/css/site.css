@@ -166,11 +166,10 @@ a.text-secondary:focus, a.text-secondary:hover {
 }
 
 #service-design, #service-marketing {
-  background-image: linear-gradient(150deg, rgb(29, 107, 180) 0%, rgba(72, 85, 137, 0.5) 25%, rgba(105, 68, 105, 0) 50%), linear-gradient(45deg, rgb(54, 32, 55) 50%, rgb(6, 57, 103) 100%);
+  background-image: linear-gradient(150deg, rgb(54, 32, 55) 0%, rgba(33, 42, 75, 0.5) 25%, rgba(6, 57, 103, 0.3) 50%), linear-gradient(45deg, rgb(29, 107, 180) 50%, rgb(105, 68, 105) 100%);
   background-size: 200% 100%;
   overflow: hidden;
   position: relative;
-  z-index: 5;
 }
 
 #service-design {
@@ -179,8 +178,8 @@ a.text-secondary:focus, a.text-secondary:hover {
 
 #service-design:after {
   left: 0;
-  width: 200%;
-  background-position: left 60% bottom 100px !important;
+  width: 100%;
+  background-position: left 20rem bottom !important;
 }
 
 #service-marketing {
@@ -189,8 +188,8 @@ a.text-secondary:focus, a.text-secondary:hover {
 
 #service-marketing:after {
   right: 0;
-  width: 200%;
-  background-position: right calc(40% + 4rem) bottom 100px;
+  width: 100%;
+  background-position: right 20rem bottom !important;
 }
 
 #service-design:after, #service-marketing:after {
@@ -199,11 +198,22 @@ a.text-secondary:focus, a.text-secondary:hover {
   position: absolute;
   top: 0;
   bottom: 0;
-  background: url("../images/bg-services.jpg");
+  background: url("../images/logo-dsignio-fav.svg");
   background-repeat: no-repeat;
-  background-size: 150%;
+  background-size: cover;
   opacity: 0.25;
-  filter: blur(5px);
+}
+
+#service-design .text-service, #service-marketing .text-service {
+  position: relative;
+  z-index: 2;
+}
+
+#bg-logos {
+  background: url("../images/bg-work.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 /****** Fuentes ***********/
@@ -298,7 +308,7 @@ footer {
 /****** Media Querys ***********/
 @media (max-width: 576px) {
   .table-exsm th,
-.table-exsm td {
+  .table-exsm td {
     padding: 0.3em !important;
   }
 }

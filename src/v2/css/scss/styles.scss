@@ -194,20 +194,17 @@
  }
 
 #service-design, #service-marketing{
-  //  background-image: linear-gradient(150deg,rgb(29, 107, 180) 0%,rgba(35,77,148,0.5) 25%,rgba(35,77,148,0) 50%),
+  //background-image: linear-gradient(150deg,rgb(29, 107, 180) 0%,rgba(35,77,148,0.5) 25%,rgba(35,77,148,0) 50%),
   //                                  linear-gradient(45deg,rgb(34,15,77) 50%,rgb(80,35,148) 100%);
-  // background-image: linear-gradient(150deg,rgb(29, 107, 180) 0%,rgba(23, 95, 161) 25%,rgba(18, 82, 142) 50%),
-  //                     linear-gradient(45deg,rgb(12,70,122) 50%,rgb(6,57,103) 100%);
-  // background-image: linear-gradient(150deg, #1D6BB4ff, #175FA1ff, #12528Eff, #0C467Aff, #063967ff),
-  //                   linear-gradient(45deg, #063967ff, #0C467Aff, #12528Eff, #175FA1ff, #1D6BB4ff);
-  // background-image: linear-gradient(150deg, rgba(29,107,180,1) 0%, rgba(72,85,137,0.5) 25%, rgba(105,68,105,0) 50%),
-  //                     linear-gradient(45deg,rgba(187,151,186,1) 50%, rgba(252,180,120,1) 100%);
-  background-image: linear-gradient(150deg, rgba(29,107,180,1) 0%, rgba(72,85,137,0.5) 25%, rgba(105,68,105,0) 50%),
-  linear-gradient(45deg,rgba(54,32,55,1) 50%, rgba(6,57,103,1)  100%);
+  //background-image: linear-gradient(150deg, rgba(105,68,105,1) 0%, rgba(62,90,148,0.5) 25%, rgba(6,57,103,0.2) 50%), 
+  //               linear-gradient(45deg, rgba(228,241,253,1) 50%, rgba(6,57,103,1) 100%);
+  //background-image: linear-gradient(150deg, rgb(105, 68, 105) 0%, rgba(62, 90, 148, 0.5) 25%, rgba(6, 57, 103, 0.2) 50%), linear-gradient(45deg, rgb(126, 182, 234) 50%, rgb(29, 107, 180) 100%);
+  background-image: linear-gradient(150deg, rgba(54,32,55,1) 0%, rgba(33,42,75,0.5) 25%, rgba(6,57,103,0.3) 50%), 
+                linear-gradient(45deg, rgba(29,107,180,1) 50%, rgba(105,68,105,1) 100%);
+  //background-image: linear-gradient(150deg, rgb(6,57,103,1) 0%, rgba(3,28,51, 0.5) 25%, rgba(3,28,51, 0.2) 50%), linear-gradient(45deg, rgb(29, 107, 180) 50%, rgb(105, 68, 105) 100%);
   background-size: 200% 100%;
-  overflow: hidden;
+  overflow: hidden; 
   position:relative;
-  z-index: 5;
 }
 
 #service-design {
@@ -216,8 +213,8 @@
 
 #service-design:after {
   left: 0;
-  width: 200%;
-  background-position: left 60% bottom 100px !important;
+  width: 100%;
+  background-position: left 20rem bottom !important;
 }
 
 #service-marketing {
@@ -226,8 +223,8 @@
 
 #service-marketing:after {
   right: 0;
-  width: 200%;
-  background-position: right calc(40% + 4rem) bottom 100px;
+  width: 100%;
+  background-position: right 20rem bottom !important;
 }
 
 #service-design:after, #service-marketing:after{
@@ -236,14 +233,24 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  background: url("../images/bg-services.jpg");
+  background: url("../images/logo-dsignio-fav.svg");
   background-repeat: no-repeat;
-  background-size: 150%;
+  background-size: cover;
   opacity: .25;
-  filter: blur(5px);
+  //filter: blur(5px);
 }
 
+#service-design .text-service, #service-marketing .text-service {
+  position:relative;
+  z-index: 2;
+}
 
+#bg-logos{
+  background: url("../images/bg-work.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
 
  
  /****** Fuentes ***********/
